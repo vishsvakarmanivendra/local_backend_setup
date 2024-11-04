@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "root",
+    "password": "nivendra6267",
+    "database": "himanshu",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "nivendra6267",
+    "database": "himanshu",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "mysql://ugya7ygzrsxvhiig:7QsT2e1BQn7vE13kkCQT@b890o8jjmpsiz6l7cvxv-mysql.services.clever-cloud.com:3306/b890o8jjmpsiz6l7cvxv",
+    "dialect": "mysql"
+  }
+}

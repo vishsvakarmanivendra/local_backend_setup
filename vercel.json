@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/user/(.*)",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/vendor/(.*)",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/admin/(.*)",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/category/(.*)",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/subCategory/(.*)",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/app.js",
+            "headers": {
+                "Authorization": "null"
+            }
+        }
+    ]
+}
